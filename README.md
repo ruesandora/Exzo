@@ -180,7 +180,7 @@ screen -S exzo
 
 > Doğru çalıştığını nasıl anlarımın cevabı görselde:
 
-![image](https://github.com/ruesandora/Exzo/assets/101149671/b51d5473-603b-4b8e-ad7e-67954a32a4f5)
+![image](https://github.com/ruesandora/Exzo/assets/101149671/bfd6cba6-0e5b-4b16-b677-e0d8c6decbd5)
 
 > Repoyu sağ üstten fork/yıldızlayabilirsiniz.
 
