@@ -36,6 +36,7 @@ sudo apt-get install libudev-dev
 sudo apt-get install protobuf-compiler
 sudo apt-get install pkg-config
 sudo apt-get install libclang-dev
+sudo apt install build-essential
 
 # nodejs'i yüklüyoruz
 sudo apt-get install nodejs
@@ -74,12 +75,13 @@ sudo apt-get install libudev-dev
 sudo apt-get install protobuf-compiler
 sudo apt-get install pkg-config
 sudo apt-get install libclang-dev
+sudo apt install build-essential
 ```
 
 > Relase işlemi `10-15 dakika` sürebilir.
 
 ```sh
-# release sonunda RUST_BACKTRACE=1 hatası alırsanız üstte ki 3 kodu tekrar girin ve tekrar release edin.
+# release sonunda RUST_BACKTRACE=1 hatası alırsanız üstte ki 5 kodu tekrar girin ve tekrar release edin.
 cargo build --release 
 cd target/release
 ```
