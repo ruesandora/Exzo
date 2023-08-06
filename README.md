@@ -18,7 +18,7 @@
 
 > Sunucu olarak [Hetzner Kullanıyorum](https://github.com/ruesandora/Hetzner/blob/main/README.md)
 
-```
+```sh
 # Benim kullandığım: 
 4 CPU - 8 RAM - 150 SSD - 20.04 Ubuntu
 # Ki bence bir tık altı daha sunucuya kurulabilir.
