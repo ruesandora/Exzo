@@ -2,7 +2,7 @@
 
 <h1 align="center"> Güncellemeler ve Gerekli paketler </h1>
 
-```
+```sh
 # sistem güncellemeleri ve gerekli kütüphaneler.
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install libudev-dev
@@ -27,7 +27,7 @@ rustup update
 
 > Node-Validator isminde bir dizin oluşturuyoruz
 
-```
+```sh
 cd
 mkdir Node-Validator
 cd Node-Validator
@@ -35,14 +35,14 @@ cd Node-Validator
 
 > `Exzo`'yu klonluyoruz
 
-```
+```sh
 git clone https://github.com/ExzoNetwork/Exzo-Network-Blockchain.git
 cd Exzo-Network-Blockchain
 ```
 
 > Hata almamak için paketleri güncelliyoruz
 
-```
+```sh
 sudo apt-get install libudev-dev
 sudo apt-get install protobuf-compiler
 sudo apt-get install pkg-config
@@ -51,30 +51,30 @@ sudo apt-get install libclang-dev
 
 > Relase işlemi `10-15 dakika` sürebilir.
 
-```
+```sh
 # release sonunda RUST_BACKTRACE=1 hatası alırsanız üstte ki 3 kodu tekrar girin ve tekrar release edin.
 cargo build --release 
 cd target/release
 ```
 
 > Exzo için `config.yml`'ı oluşturuyoruz
-```
+```sh
 ./exzo config set --url https://rpc-test-1.exzo.network/rpc
 ```
 
 > Bu komutun çıktısı `websocket` , `RPC url` gibi bazı bilgiler gösterecek, yani doğru çıktı.
-```
+```sh
 ./exzo config get
 ```
 
 > Komutları tek tek girdiğimizde ufak çıktılar alacağız. `version ve transaction`
-```
+```sh
 ./exzo transaction-count
 ./exzo cluster-version
 ```
 
 > Son olarak bu komutta loglarda `IP'ımızı` görüyorsak `ctrl + c` ile durdurabiliriz.
-```
+```sh
 ./exzo-gossip spy --entrypoint bootnode-test.exzo.network:8001
 ```
 
@@ -82,7 +82,7 @@ cd target/release
 
 > DİKKAT: Bir metin belgesi açın ve 3 farklı private key / cüzdan adresimiz olacak hepsini kaydedin.
 
-```
+```sh
 > validator-keypair ==> Cüzdan-1
 > vote-keypair ==> Cüzdan-2
 > withdrawer-keypair ==> Cüzdan-3
@@ -90,7 +90,7 @@ cd target/release
 
 > `Cüzdan-1`'i oluşturuyoruz:
 
-```
+```sh
 ./exzo-keygen new -o ~/new-validator-keypair.json
 
 # Çıkan çıktıyı kaydediyoruz ve altta ki komut ile cüzdan adresimiz aynı mı kontrol ediyoruz:
@@ -108,7 +108,7 @@ cd target/release
 
 > `Cüzdan-2`'i oluşturuyoruz:
 
-```
+```sh
 ./exzo-keygen new -o ~/my-vote-account-keypair.json
 
 # Yine adresimizi kontrol ediyoruz:
@@ -116,7 +116,7 @@ cd target/release
 ```
 
 > `Cüzdan-3`'i oluşturuyoruz:
-```
+```sh
 ./exzo-keygen new -o ~/withdrawer-keypair.json
 
 # Yine adresimizi kontrol ediyoruz:
@@ -125,7 +125,7 @@ cd target/release
 
 > Son olarak `vote account` oluşturup, `vote key`'e token transfer ediyoruz.
 
-```
+```sh
 # Cüzdan-3 eklenecek burada.
 ./exzo create-vote-account ~/my-vote-account-keypair.json ~/new-validator-keypair.json <Cüzdan-3> --commission 1 
 
@@ -135,7 +135,7 @@ cd target/release
 
 <h1 align="center"> Validatörü başlatma </h1>
 
-```
+```sh
 screen -S exzo
 
 # Soracağınızı biliyorum, değişmeniz gereken bir değer yok olsa söylerdim :)
