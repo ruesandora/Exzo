@@ -1,5 +1,32 @@
 <h1 align="center"> Exzo Network </h1>
 
+> Exzo'yu hasta olduğum dönem formunu doldurmuştum, önemi olmayacağını biliyordum ki öylede oldu ve hepiniz katılabilirsiniz.
+
+> Ödül şu şekilde: Node'un testnet bitene kadar `%95 ve üzerinde uptime` alırsa ödül alırsın almazsa geçmiş olsun.
+
+> Ne kadar sürecek bilgi yok ama kısa sürecek formda yazıyordu.
+
+> `Uptime'dan` ötürü iyi bir sunucu tercih edin.
+
+> Ricamdır adım adım gidin, `acelemiz yok` kaçan bir şey yok.
+
+> Bu bilgiler değişkenlik gösterebilir benim okuduklarım bu şekilde sizde araştırınız.
+
+>  Topluluk kanalları: [Duyurular](https://t.me/RuesAnnouncement) - [Sorularınız İçin](https://t.me/RuesChat) -  [Explorer](https://exzoscan.io/?cluster=testnet)
+
+<h1 align="center"> Donanım: </h1>
+
+> Sunucu olarak [Hetzner Kullanıyorum](https://github.com/ruesandora/Hetzner/blob/main/README.md)
+
+```
+# Benim kullandığım: 
+4 CPU - 8 RAM - 150 SSD - 20.04 Ubuntu
+# Ki bence bir tık altı daha sunucuya kurulabilir.
+
+# Dökümasyon önerisi:
+8 CPU - 32 RAM - 500 SSD
+```
+
 <h1 align="center"> Güncellemeler ve Gerekli paketler </h1>
 
 ```sh
@@ -140,12 +167,14 @@ screen -S exzo
 
 # Soracağınızı biliyorum, değişmeniz gereken bir değer yok olsa söylerdim :)
 ./exzo-validator --identity ~/new-validator-keypair.json --vote-account ~/my-vote-account-keypair.json --ledger /root/exzonode/ledger/ --rpc-port 8899 --dynamic-port-range 8000-8012 --entrypoint bootnode-test.exzo.network:8001 --limit-ledger-size --expected-shred-version 17211 --max-genesis-archive-unpacked-size 707374182 --log -
+```
 
+> validatörü başlatırken port sorun yaşarsanız [buradan](https://github.com/ruesandora/Exzo/blob/main/port-sorunu.md) çözebilirsiniz.
+
+```
 # CTRL A D ile çıkıyoruz ve logları kontrol ediyoruz
 ./exzo-gossip spy --entrypoint bootnode-test.exzo.network:8001
 ```
 
 
-
-
-
+> Repo hakkında daha detaylı bilgileri yarın eklerim.
