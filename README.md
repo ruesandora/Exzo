@@ -180,5 +180,6 @@ screen -S exzo
 
 ![image](https://github.com/ruesandora/Exzo/assets/101149671/b51d5473-603b-4b8e-ad7e-67954a32a4f5)
 
+> Repoyu sağ üstten fork/yıldızlayabilirsiniz.
 
 > Repo hakkında daha detaylı bilgileri yarın eklerim.
