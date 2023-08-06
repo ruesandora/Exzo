@@ -176,5 +176,9 @@ screen -S exzo
 ./exzo-gossip spy --entrypoint bootnode-test.exzo.network:8001
 ```
 
+> Doğru çalıştığını nasıl anlarımın cevabı görselde:
+
+![image](https://github.com/ruesandora/Exzo/assets/101149671/b51d5473-603b-4b8e-ad7e-67954a32a4f5)
+
 
 > Repo hakkında daha detaylı bilgileri yarın eklerim.
